@@ -95,7 +95,7 @@ public:
         out << id << " " << name << " " << sem << " "
             << year << " " << sec << " " << gpa << "\n";
 
-        cout << "✔ Student Added Successfully\n";
+        cout << " Student Added Successfully\n";
     }
 
     static void viewAll() {
@@ -150,7 +150,7 @@ public:
                 ok = true;
 
                 cout << "\n=================================================\n";
-                cout << "           🔍 STUDENT INFORMATION\n";
+                cout << "            STUDENT INFORMATION\n";
                 cout << "=================================================\n";
 
                 cout << left;
@@ -163,16 +163,16 @@ public:
 
                 cout << "=================================================\n";
 
-                if (gp >= 8.5) cout << "🌟 Excellent Performance!\n";
-                else if (gp >= 7.0) cout << "👍 Good Performance.\n";
-                else cout << "⚠ Needs Improvement.\n";
+                if (gp >= 8.5) cout << " Excellent Performance!\n";
+                else if (gp >= 7.0) cout << " Good Performance.\n";
+                else cout << " Needs Improvement.\n";
 
                 cout << "=================================================\n";
 
                 return;
             }
         }
-        if (!ok) cout << "❌ Student Not Found.\n";
+        if (!ok) cout << " Student Not Found.\n";
     }
 };
 
@@ -200,7 +200,7 @@ public:
         ofstream out(TICK_FILE, ios::app);
         out << id << " " << type << " " << msg << "\n";
 
-        cout << "✔ Ticket Submitted\n";
+        cout << " Ticket Submitted\n";
     }
 
     static void viewTickets() {
@@ -325,7 +325,7 @@ public:
         remove(TICK_FILE);
         rename("temp2.txt", TICK_FILE);
 
-        cout << "✔ Ticket Resolved Successfully\n";
+        cout << " Ticket Resolved Successfully\n";
     }
 };
 
